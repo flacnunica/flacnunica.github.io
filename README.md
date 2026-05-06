@@ -45,6 +45,24 @@ Gli indirizzi IPv4 GitHub Pages indicati nella documentazione sono:
 
 Vedi `DOMAIN_OPTIONS.md` per le opzioni economiche e la raccomandazione.
 
+## Indicizzazione Google
+
+Il sito include:
+
+- `robots.txt`, con link alla sitemap.
+- `sitemap.xml`, con la homepage canonica.
+- `rel="canonical"` su `https://fabioangei.it/`.
+- Metadati Open Graph e Twitter.
+- Dati strutturati JSON-LD per la pagina profilo.
+
+In Google Search Console:
+
+1. Crea o apri la proprieta' `fabioangei.it`.
+2. Vai su `Sitemaps`.
+3. Invia `sitemap.xml`.
+4. Usa `Controllo URL` su `https://fabioangei.it/`.
+5. Se la pagina e' idonea, clicca `Richiedi indicizzazione`.
+
 ## Credito immagine
 
 Foto principale: trolvag, CC BY-SA 3.0, via Wikimedia Commons.
