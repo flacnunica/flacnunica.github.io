@@ -192,15 +192,26 @@ a:focus-visible {
 }
 
 .paper-title::after {
-  content: " +";
-  color: var(--green);
-  font-size: 0.8em;
-  font-weight: 400;
+  content: "+";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin-left: 8px;
+  border-radius: 2px;
+  background: var(--green);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: 0.08em;
+  text-decoration: none;
   white-space: nowrap;
 }
 
 .paper-title[aria-expanded="true"]::after {
-  content: " −";
+  content: "−";
 }
 
 .paper-title:hover {
