@@ -110,9 +110,9 @@
         <div class="section-label">Research</div>
         <div class="section-body">
           <article class="paper">
-            <h2>On the Record: What Drives Workplace Injury Reporting?</h2>
+            <h2><button class="paper-title" type="button" aria-expanded="false" aria-controls="abstract-1">On the Record: What Drives Workplace Injury Reporting?</button></h2>
             <p class="authors">Fabio Angei</p>
-            <p>
+            <p id="abstract-1" hidden>
               I use INAIL administrative records for 2014–2019 and a matching difference-in-differences design to study how fatal workplace accidents affect injury reporting. Fatal accidents provide local attention shocks: reported non-severe injuries rise by about 4% within the same province and economic sector over the following month. I find no corresponding increase in injuries involving permanent impairment or in commuting injuries, pointing to a reporting response rather than a change in underlying risk. The additional reports involve compensated time away from work, and the response is larger and more persistent in provinces with stronger union presence. The findings show that administrative injury records reflect attention and local institutional conditions as well as workplace risk.
             </p>
             <div class="paper-links">
@@ -122,9 +122,9 @@
           </article>
 
           <article class="paper">
-            <h2>Artificial Intelligence and Support for Labor Market Policies: Evidence from a Survey Experiment</h2>
+            <h2><button class="paper-title" type="button" aria-expanded="false" aria-controls="abstract-2">Artificial Intelligence and Support for Labor Market Policies: Evidence from a Survey Experiment</button></h2>
             <p class="authors">with <a href="https://scholar.google.com/citations?user=nyAj21wAAAAJ">Silvia Balia</a>, <a href="https://scholar.google.com/citations?user=Ul-5H38AAAAJ">Rinaldo Brau</a>, and <a href="https://sites.google.com/site/giovannisulis/">Giovanni Sulis</a></p>
-            <p>
+            <p id="abstract-2" hidden>
               We study how narratives about artificial intelligence (AI) shape support for labor market policies in a randomized survey experiment with 2,105 Italian employees. Average effects are small, but responses differ by workplace AI use. Among non-users, framing AI as a substitute for labor increases support for publicly funded training and hiring subsidies; emphasizing task complementarity increases support for training. Among AI users, both narratives reduce support for unemployment insurance and short-time work schemes. The reskilling narrative has no statistically significant effects in either group. Among users, the substitution narrative also increases expectations of household financial losses from public intervention addressing AI's labor market effects, without a detectable change in perceived personal job-loss risk. These findings suggest that workplace AI experience shapes how workers respond to information about AI and the policies intended to address its consequences.
             </p>
             <div class="paper-links">
@@ -134,9 +134,9 @@
           </article>
 
           <article class="paper">
-            <h2>Workers Beliefs about Benefits and Costs of Meaningful Work</h2>
+            <h2><button class="paper-title" type="button" aria-expanded="false" aria-controls="abstract-3">Workers Beliefs about Benefits and Costs of Meaningful Work</button></h2>
             <p class="authors">with <a href="https://scholar.google.com/citations?user=nyAj21wAAAAJ">Silvia Balia</a>, <a href="https://scholar.google.com/citations?user=Ul-5H38AAAAJ">Rinaldo Brau</a>, and <a href="https://sites.google.com/site/giovannisulis/">Giovanni Sulis</a></p>
-            <p>
+            <p id="abstract-3" hidden>
               Based on a survey of 3,510 Italian employees, this project studies how workers evaluate autonomy, competence, and relatedness, and how those beliefs compare with actual outcomes in job satisfaction, work-life balance, and working time.
             </p>
           </article>
@@ -177,5 +177,15 @@
       <p>Fabio Angei</p>
       <p>&copy; 2026</p>
     </footer>
+    <script>
+      document.querySelectorAll('.paper-title').forEach((button) => {
+        button.addEventListener('click', () => {
+          const abstract = document.getElementById(button.getAttribute('aria-controls'));
+          const expanded = button.getAttribute('aria-expanded') === 'true';
+          button.setAttribute('aria-expanded', String(!expanded));
+          abstract.hidden = expanded;
+        });
+      });
+    </script>
   </body>
 </html>

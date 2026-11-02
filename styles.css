@@ -175,6 +175,38 @@ a:focus-visible {
   border-top: 1px solid var(--line);
 }
 
+.paper-title {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.paper-title::after {
+  content: " +";
+  color: var(--green);
+  white-space: nowrap;
+}
+
+.paper-title[aria-expanded="true"]::after {
+  content: " −";
+}
+
+.paper-title:hover {
+  color: var(--green);
+}
+
+.paper-title:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
 .paper:first-child {
   padding-top: 0;
   border-top: 0;
