@@ -158,8 +158,8 @@ a:focus-visible {
 
 .section-body h2 {
   margin: 0 0 10px;
-  font-size: 30px;
-  line-height: 1.16;
+  font-size: 22px;
+  line-height: 1.35;
 }
 
 .section-body p,
@@ -176,20 +176,26 @@ a:focus-visible {
 }
 
 .paper-title {
-  display: block;
-  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline;
   padding: 0;
   border: 0;
   color: inherit;
   background: transparent;
   font: inherit;
+  letter-spacing: inherit;
   text-align: left;
+  border-radius: 0;
+  box-shadow: none;
   cursor: pointer;
 }
 
 .paper-title::after {
   content: " +";
   color: var(--green);
+  font-size: 0.8em;
+  font-weight: 400;
   white-space: nowrap;
 }
 
@@ -199,6 +205,9 @@ a:focus-visible {
 
 .paper-title:hover {
   color: var(--green);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
 .paper-title:focus-visible {
@@ -225,7 +234,19 @@ a:focus-visible {
 }
 
 .paper-links {
-  margin-top: 18px;
+  margin-top: 12px;
+  gap: 10px 20px;
+}
+
+.paper-links a {
+  min-height: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: var(--green);
+  font-size: 15px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 .link-row {
@@ -299,7 +320,7 @@ a:focus-visible {
   }
 
   .section-body h2 {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .section-body p,
