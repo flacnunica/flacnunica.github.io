@@ -386,3 +386,21 @@ a:focus-visible {
 #policy-reports {
   scroll-margin-top: 100px;
 }
+
+.report-pages,
+.report-volume {
+  display: inline-block;
+  color: var(--green);
+  font-size: 14px;
+  text-decoration-thickness: 1px;
+}
+
+.report-volume {
+  margin-top: 10px;
+}
+
+.report .paper-title::after {
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+}
