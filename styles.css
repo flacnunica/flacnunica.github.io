@@ -344,3 +344,45 @@ a:focus-visible {
     display: grid;
   }
 }
+
+/* Keep policy contributions visually secondary to research papers. */
+.reports-body .reports-intro {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.report + .report {
+  margin-top: 22px;
+}
+
+.section-body .report h2 {
+  margin-bottom: 8px;
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.report h2 a {
+  text-decoration-thickness: 1px;
+}
+
+.report-contributions {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.report-contributions li + li {
+  margin-top: 10px;
+}
+
+.report-authors {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+#policy-reports {
+  scroll-margin-top: 100px;
+}
