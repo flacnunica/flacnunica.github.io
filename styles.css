@@ -404,3 +404,11 @@ a:focus-visible {
   height: 20px;
   font-size: 16px;
 }
+
+.section-body .report .report-translation {
+  margin: -4px 0 10px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
